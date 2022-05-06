@@ -1,0 +1,74 @@
+
+$primary: #5265E1;
+$secondary: #FA5959; 
+
+h1{
+    font-weight: bold;
+}
+
+p{
+    color: #9495a3;
+    font-weight:610; 
+}
+
+.imgHero{
+    position: relative;
+    bottom: 3em;
+}
+
+.backBlue{
+    background-color: #5265E1;
+    border-top-left-radius: 700px;  
+    border-bottom-left-radius: 700px; 
+    position: relative;
+    top: 3em; 
+    bottom: 0;   
+}
+
+
+
+
+@media(max-width: 768px ){
+    
+    h1{
+        justify-content: center;
+        text-align: center;
+    }
+    
+    p{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imgHero{      
+        bottom: 2em;
+    }
+
+    .backBlue{
+        margin-top:2em;
+        margin-bottom: 2em;
+        top:1em; 
+    }
+
+    .getBrowser{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:576px ){
+
+    
+    
+    .imgHero{
+        justify-content: center;
+        right: 1em;
+    }
+    .backBlue{       
+        position: static;
+        margin-left: auto;
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
