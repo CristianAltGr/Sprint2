@@ -18,6 +18,7 @@ p {
   border-bottom-left-radius: 700px;
   position: relative;
   top: 3em;
+  bottom: 0;
 }
 
 @media (max-width: 768px) {
