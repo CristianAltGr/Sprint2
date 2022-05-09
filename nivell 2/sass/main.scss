@@ -1,9 +1,15 @@
 
 $primary: #5265E1;
 $secondary: #FA5959; 
+$accordion-color: #5265E1;
+;
 
 h1{
     font-weight: bold;
+}
+
+h5{
+    color: black;
 }
 
 h6{
@@ -49,6 +55,17 @@ p{
     bottom: 0;   
 }
 
+.card1{
+    position: relative;
+    bottom: 50px;
+}
+
+.card3{
+    position: relative;
+    top: 50px;
+}
+
+
 
 @media(max-width: 768px ){
     
@@ -92,6 +109,18 @@ p{
         display: flex;
         justify-content: center;
     }
+
+    .imgLogo{
+        padding: 2em;
+    }
+
+    .card1{
+        position: static;
+    }
+    
+    .card3{
+        position: static;
+    }
 }
 
 
@@ -116,6 +145,7 @@ p{
     .backBlue2{       
         right: 1em;
     }
+
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
