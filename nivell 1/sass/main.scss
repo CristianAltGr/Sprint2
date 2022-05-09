@@ -1,9 +1,24 @@
 
 $primary: #5265E1;
 $secondary: #FA5959; 
+$accordion-color: #5265E1;
+;
 
 h1{
     font-weight: bold;
+}
+
+h5{
+    color: black;
+}
+
+h6{
+    color: #6f707a;
+}
+
+h6:hover{
+    color:black;  
+    border-bottom: 5px solid red;  
 }
 
 p{
@@ -25,12 +40,41 @@ p{
     bottom: 0;   
 }
 
+.imgHero2{
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+}
+
+.backBlue2{
+    background-color: #5265E1;
+    border-top-right-radius: 700px;  
+    border-bottom-right-radius: 700px; 
+    position: relative;
+    top: 3em; 
+    bottom: 0;   
+}
+
+.card1{
+    position: relative;
+    bottom: 50px;
+}
+
+.card3{
+    position: relative;
+    top: 50px;
+}
 
 
 
 @media(max-width: 768px ){
     
     h1{
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2{
         justify-content: center;
         text-align: center;
     }
@@ -43,8 +87,14 @@ p{
     .imgHero{      
         bottom: 2em;
     }
-
+    
     .backBlue{
+        margin-top:2em;
+        margin-bottom: 2em;
+        top:1em; 
+    }
+
+    .backBlue2{
         margin-top:2em;
         margin-bottom: 2em;
         top:1em; 
@@ -54,7 +104,25 @@ p{
         display: flex;
         justify-content: center;
     }
+    
+    .getInfo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgLogo{
+        padding: 2em;
+    }
+
+    .card1{
+        position: static;
+    }
+    
+    .card3{
+        position: static;
+    }
 }
+
 
 @media(max-width:576px ){
 
@@ -68,6 +136,16 @@ p{
         position: static;
         margin-left: auto;
     }
+
+    .imgHero2{
+        justify-content: center;
+        left: 1em;
+    }
+
+    .backBlue2{       
+        right: 1em;
+    }
+
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
