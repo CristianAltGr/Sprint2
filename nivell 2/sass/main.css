@@ -59,6 +59,28 @@ p {
   top: 50px;
 }
 
+.footNav {
+  background-color: #060b44;
+}
+
+footer p {
+  color: #ccbbbb;
+}
+
+footer h3, footer .h3 {
+  color: white;
+}
+
+footer h5, footer .h5 {
+  color: white;
+}
+
+footer button {
+  font-size: small;
+  font-weight: 200;
+  color: aquamarine;
+}
+
 @media (max-width: 768px) {
   h1, .h1 {
     -webkit-box-pack: center;
@@ -115,6 +137,14 @@ p {
   }
   .card3 {
     position: static;
+  }
+  .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

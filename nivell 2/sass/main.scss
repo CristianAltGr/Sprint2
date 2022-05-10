@@ -2,7 +2,6 @@
 $primary: #5265E1;
 $secondary: #FA5959; 
 $accordion-color: #5265E1;
-;
 
 h1{
     font-weight: bold;
@@ -65,6 +64,27 @@ p{
     top: 50px;
 }
 
+.footNav{
+    background-color: #060b44;
+}
+
+footer p{
+    color: rgb(204, 187, 187);
+}
+
+footer h3{
+    color: white;
+}
+
+footer h5{
+    color: white;
+}
+
+footer button{
+    font-size: small;
+    font-weight: 200;
+    color: aquamarine;
+}
 
 
 @media(max-width: 768px ){
@@ -120,6 +140,11 @@ p{
     
     .card3{
         position: static;
+    }
+
+    .links{
+        display: flex;
+        justify-content: center;
     }
 }
 

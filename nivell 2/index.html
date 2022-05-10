@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sprint 2 nivell 1 exercicis 2 3 4</title>
+    <title>sprint 2 nivell 2</title>
     
     <link rel="stylesheet" href="./sass/main.css">
 </head>
@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#">Contact</a>
                       </li>
                       <li class="nav-item ps-3">
-                        <button type="button" class="btn btn-secondary ps-4 pe-4">Login</button>
+                        <button type="button" class="btn btn-secondary  ps-4 pe-4 text-light">Login</button>
                       </li>
                     </ul>
                   </div>
@@ -146,7 +146,6 @@
         </section>
 
         <section class="pt-3 mt-3 pb-3 mb-3 row d-flex justify-content-center" >
-          
           <div class="faqs row d-flex justify-content-center text-center mt-5">
             <h2 class="col-12 mt-4 mb-3">Frequently Asked Questions</h2>
             <p class="col-12 col-md-6 mb-5"> Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
@@ -202,12 +201,75 @@
                 <button type="button" class="btn btn-primary text-nowrap ">More info</button>
               </div>
           </div>
-
-
         </section>
+
+        <footer class="bg-primary pt-5" >
+          <div class="footSection mt-3">
+            <div class="row d-flex justify-content-center text-center">
+              <h5 class="col-12 mb-3"> 35.000 + already joined</h5>
+              <h3 class="col-11 col-md-5"> Stay up-to-date with what we're going</h3>
+            </div>
+            <div class="form mt-4">
+              <form class="row d-flex justify-content-center g-3 needs-validation pb-2">
+                <div class="col-10 col-md-3 position-relative">
+                  <label for="form-email" class="visually-hidden">Enter your mail address</label>
+                  <input type="email" class="form-control " placeholder="Enter your mail address" novalidate required>
+                    <div class="valid-tooltip col-11">Correcte</div>
+                    <div class="invalid-tooltip col-11">Error</div>                    
+                   
+                </div>
+                <div class="col-10 col-md-auto">
+                  <button type="#" class="btn btn-secondary  col-12 col-md-auto text-light">Contact us</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footNav mt-4">
+            <nav class="navbar row ms-1 ">
+              <div class="container row d-flex justify-content-center ">
+                <div class="logoFoot links col-12 col-md-2">
+                  <a class="navbar-brand" href="#"><img  src="media/logo-bookmark.svg" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="nav-menu links row col-12 col-sm-8 mt-3 ">
+                  <a class="nav-link col-12 col-md-3"  href="#"><p>Features</p></a>
+                  <a class="nav-link col-12 col-md-3" href="#"><p>Pricing</p></a>
+                  <a class="nav-link col-12 col-md-3 " href="#"><p>Contact</p></a>
+                </div>
+                <div class="links col-8 col-md-2 row">
+                  <a class="nav-link col-4" href="#"><img src="Media/icon-facebook.svg" alt="facebook link"></a>
+                  <a class="nav-link col-4" href="#"><img src="Media/icon-twitter.svg" alt="twitter link"></a>
+                </div>   
+              </div>
+            </nav>
+          </div>
+        </footer>
         
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+    
 </body>
 </html>
