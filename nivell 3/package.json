@@ -1,10 +1,10 @@
 {
-  "name": "nivell-1",
+  "name": "nivell-3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css ./sass/main.css --content ./index.html -o sass/cleanmain.css"
   },
   "keywords": [],
   "author": "",
