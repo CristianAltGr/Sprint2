@@ -2,27 +2,46 @@
 $primary: #5265E1;
 $secondary: #FA5959; 
 $accordion-color: #5265E1;
+$h4-font-size: 1rem;
+$accordion-icon-active-color:  #FA5959;
 
 h1{
     font-weight: bold;
+}
+
+h4{
+    color: #1e1e20;
+}
+
+h4:hover{
+    color:#FA5959;
 }
 
 h5{
     color: black;
 }
 
+.faqsAcordion h5:hover{
+    color: #FA5959;
+}
+
+
 h6{
-    color: #6f707a;
+    color: #1e1e20;
 }
 
 h6:hover{
-    color:black;  
+    color:$secondary;  
     border-bottom: 5px solid red;  
 }
 
 p{
     color: #9495a3;
     font-weight:610; 
+}
+
+header p{
+    color: white;
 }
 
 .imgHero{
@@ -54,12 +73,12 @@ p{
     bottom: 0;   
 }
 
-.card1{
+.card:nth-child(1){
     position: relative;
     bottom: 50px;
 }
 
-.card3{
+.card:nth-child(3){
     position: relative;
     top: 50px;
 }
@@ -72,6 +91,10 @@ footer p{
     color: rgb(204, 187, 187);
 }
 
+footer p:hover{
+    color:#FA5959;
+}
+
 footer h3{
     color: white;
 }
@@ -80,11 +103,44 @@ footer h5{
     color: white;
 }
 
-footer button{
-    font-size: small;
-    font-weight: 200;
-    color: aquamarine;
+footer button p{
+    color: rgb(255, 255, 255);
 }
+
+.socialLink:hover{
+    filter: brightness(0) saturate(100%) invert(49%) sepia(69%) saturate(1784%) hue-rotate(324deg) brightness(96%) contrast(116%);;
+}
+
+.btn-secondary.active:hover{
+    background-color: white;
+    border-color: #FA5959;
+    p {
+     color: #FA5959;
+    }    
+}
+
+.btn-primary p{
+    color:white
+}
+
+.btn-primary.active:hover{
+    background-color: white;
+    border-color:#5265E1;
+    p {
+     color: #5265E1;
+    }    
+}
+
+.btn-light p{
+    color: black;
+}
+
+.btn-light.active:hover{
+    background-color: white;
+    border-color:black;   
+}
+
+
 
 
 @media(max-width: 768px ){

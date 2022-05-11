@@ -2,22 +2,38 @@ h1, .h1 {
   font-weight: bold;
 }
 
+h4, .h4 {
+  color: #1e1e20;
+}
+
+h4:hover, .h4:hover {
+  color: #FA5959;
+}
+
 h5, .h5 {
   color: black;
 }
 
+.faqsAcordion h5:hover, .faqsAcordion .h5:hover {
+  color: #FA5959;
+}
+
 h6, .h6 {
-  color: #6f707a;
+  color: #1e1e20;
 }
 
 h6:hover, .h6:hover {
-  color: black;
+  color: #FA5959;
   border-bottom: 5px solid red;
 }
 
 p {
   color: #9495a3;
   font-weight: 610;
+}
+
+header p {
+  color: white;
 }
 
 .imgHero {
@@ -49,12 +65,12 @@ p {
   bottom: 0;
 }
 
-.card1 {
+.card:nth-child(1) {
   position: relative;
   bottom: 50px;
 }
 
-.card3 {
+.card:nth-child(3) {
   position: relative;
   top: 50px;
 }
@@ -67,6 +83,10 @@ footer p {
   color: #ccbbbb;
 }
 
+footer p:hover {
+  color: #FA5959;
+}
+
 footer h3, footer .h3 {
   color: white;
 }
@@ -75,10 +95,44 @@ footer h5, footer .h5 {
   color: white;
 }
 
-footer button {
-  font-size: small;
-  font-weight: 200;
-  color: aquamarine;
+footer button p {
+  color: white;
+}
+
+.socialLink:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(49%) sepia(69%) saturate(1784%) hue-rotate(324deg) brightness(96%) contrast(116%);
+          filter: brightness(0) saturate(100%) invert(49%) sepia(69%) saturate(1784%) hue-rotate(324deg) brightness(96%) contrast(116%);
+}
+
+.btn-secondary.active:hover {
+  background-color: white;
+  border-color: #FA5959;
+}
+
+.btn-secondary.active:hover p {
+  color: #FA5959;
+}
+
+.btn-primary p {
+  color: white;
+}
+
+.btn-primary.active:hover {
+  background-color: white;
+  border-color: #5265E1;
+}
+
+.btn-primary.active:hover p {
+  color: #5265E1;
+}
+
+.btn-light p {
+  color: black;
+}
+
+.btn-light.active:hover {
+  background-color: white;
+  border-color: black;
 }
 
 @media (max-width: 768px) {
@@ -306,13 +360,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
+  font-size: 1rem;
 }
 
 h5, .h5 {
@@ -5491,7 +5539,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a5bcb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -8825,7 +8873,7 @@ fieldset:disabled .btn {
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1rem !important;
 }
 
 .fs-5 {
@@ -12085,9 +12133,6 @@ fieldset:disabled .btn {
   }
   .fs-3 {
     font-size: 1.75rem !important;
-  }
-  .fs-4 {
-    font-size: 1.5rem !important;
   }
 }
 
